@@ -36,3 +36,9 @@ Enter the file name pattern of graphql queries, mutations and subscriptions: (sr
 Do you want to generate/update all possible GraphQL operations - queries, mutations and subscriptions? Y
 Enter maximum statement depth [increase from default if your schema is deeply nested] 2
 ```
+* Open AppSync Console
+```
+amplify console api
+
+Please select from one of the below mentioned services GraphQL
+```
