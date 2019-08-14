@@ -94,6 +94,11 @@
 	amplify status
 	```
 
+* Start local React application
+	```
+	npm start
+	```
+
 ## GraphQL API
 * Adding a GraphQL API
 ```
