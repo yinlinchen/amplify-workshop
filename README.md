@@ -8,11 +8,14 @@
 
 ## Section 1: Creating your first React Application and setup AWS Amplify
 * Create a new React project & change into the new directory using the Create React App CLI.
-```
+	```
+	create-react-app bookapp
+	```
+	Or use npx (npm 5.2 & later)
+	```
+	npx create-react-app bookapp
+	```
 
-create-react-app bookapp
-
-```
 
 
 
