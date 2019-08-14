@@ -151,6 +151,27 @@ Please select from one of the below mentioned services GraphQL
 
 
 ## Section 5: Multiple development environments
+* Switch Amplify env
+	```
+	amplify env checkout developer
+	amplify env checkout master
+	amplify env list
+	```
+* Merge branch (Amplify)
+	```
+	amplify env checkout master
+	amplify env pull
+	amplify status
+	amplify push
+	```
+* Merge branch (github)
+	```
+	git checkout master
+	git merge dev
+	git add .
+	git commit -m "add a new function"
+	git push origin master
+	```
 
 ## Project clean up 
 * Removing Services
