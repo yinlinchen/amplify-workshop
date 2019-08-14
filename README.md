@@ -99,7 +99,10 @@
 	npm start
 	```
 
-## GraphQL API
+
+## Section 2: 
+
+## Section 4: 
 * Adding a GraphQL API
 ```
 amplify add api
@@ -140,6 +143,8 @@ amplify console api
 Please select from one of the below mentioned services GraphQL
 ```
 
+
+## Section 5: Multiple development environments
 
 ## Project clean up 
 * Removing Services
