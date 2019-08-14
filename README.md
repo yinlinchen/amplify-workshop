@@ -55,7 +55,18 @@
 	Complete the user creation using the AWS console
 	https://console.aws.amazon.com/iam/home?region=undefined#/.../&policies=arn:aws:iam::aws:policy
 	Press Enter to continue
+
+	Enter the access key of the newly created user:
+	? accessKeyId:  (<YOUR_ACCESS_KEY_ID>) 
+	? secretAccessKey:  (<YOUR_SECRET_ACCESS_KEY>)
+	
+	This would update/create the AWS Profile in your local machine
+	? Profile Name:  amplify-west2
+
+
+
 	```
+
 
 
 
