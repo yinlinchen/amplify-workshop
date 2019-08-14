@@ -139,3 +139,17 @@ amplify console api
 
 Please select from one of the below mentioned services GraphQL
 ```
+
+
+## Project clean up 
+* Removing Services
+	```
+	amplify remove auth
+	amplify status
+	amplify push
+	```
+
+* Deleting entire project
+	```
+	amplify delete
+	```
