@@ -108,6 +108,8 @@
 
 ## Section 2: 
 
+## Section 3: 
+
 ## Section 4: 
 * Adding a GraphQL API
 ```
@@ -148,7 +150,6 @@ amplify console api
 
 Please select from one of the below mentioned services GraphQL
 ```
-
 
 ## Section 5: Multiple development environments
 * Switch Amplify env
