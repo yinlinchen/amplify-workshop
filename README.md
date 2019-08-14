@@ -64,15 +64,37 @@
 	? Profile Name:  amplify-west2
 	```
 
-* Initializing A New Project
+* Initializing Amplify project
 	```
 	amplify init
 	```
 
+	```
+	[ ylchen ylchen-ri-1 ~/Projects/bookapp ] amplify init
 
+	? Enter a name for the project bookapp
+	? Enter a name for the environment master
+	? Choose your default editor: Visual Studio Code
+	? Choose the type of app that you're building javascript
+	Please tell us about your project
+	? What javascript framework are you using react
+	? Source Directory Path:  src
+	? Distribution Directory Path: build
+	? Build Command:  npm run-script build
+	? Start Command: npm run-script start
+	Using default provider  awscloudformation
 
+	For more information on AWS Profiles, see:
+	https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
 
+	? Do you want to use an AWS profile? Yes
+	? Please choose the profile you want to use amplify-west2
+	```
 
+* Verify Amplify status
+	```
+	amplify status
+	```
 
 ## GraphQL API
 * Adding a GraphQL API
