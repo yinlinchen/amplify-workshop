@@ -62,9 +62,11 @@
 	
 	This would update/create the AWS Profile in your local machine
 	? Profile Name:  amplify-west2
+	```
 
-
-
+* Initializing A New Project
+	```
+	amplify init
 	```
 
 
