@@ -70,8 +70,6 @@
 	```
 
 	```
-	[ ylchen ylchen-ri-1 ~/Projects/bookapp ] amplify init
-
 	? Enter a name for the project bookapp
 	? Enter a name for the environment master
 	? Choose your default editor: Visual Studio Code
