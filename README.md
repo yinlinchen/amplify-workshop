@@ -1,12 +1,12 @@
-## Amplify workshop
+# Amplify workshop
 
-# Section 1: Creating your first React Application and setup AWS Amplify
-
-
+## Section 1: Creating your first React Application and setup AWS Amplify
 
 
 
-# GraphQL API
+
+
+## GraphQL API
 * Adding a GraphQL API
 ```
 amplify add api
