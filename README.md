@@ -18,6 +18,7 @@
 
 * Push the project to your GitHub
 	```
+	cd bookapp
 	git remote add origin git@github.com:<github username>/bookapp.git
 	git add .
 	git commit -m "Initial commit"
@@ -26,7 +27,6 @@
 
 * Install AWS Amplify & AWS Amplify React libraries
 	```
-	cd bookapp
 	npm install --save aws-amplify aws-amplify-react uuid
 	```
 
