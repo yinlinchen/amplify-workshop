@@ -99,6 +99,12 @@
 	npm start
 	```
 
+* Deploy your application via the Amplify Console
+	```
+	git add .
+	git commit -m "Add a new function"
+	git push origin master
+	```
 
 ## Section 2: 
 
