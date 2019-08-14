@@ -16,6 +16,19 @@
 	npx create-react-app bookapp
 	```
 
+* Push the project to your GitHub
+	```
+	git remote add origin git@github.com:<github username>/bookapp.git
+	git add .
+	git commit -m "Initial commit"
+	git push origin master
+	```
+
+* Install AWS Amplify & AWS Amplify React libraries
+	```
+	cd bookapp
+	npm install --save aws-amplify aws-amplify-react uuid
+	```
 
 ## GraphQL API
 * Adding a GraphQL API
