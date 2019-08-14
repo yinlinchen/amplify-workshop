@@ -44,10 +44,17 @@
 	Sign in to your AWS administrator account:
 	https://console.aws.amazon.com/
 	Press Enter to continue
+	
 	Specify the AWS Region
 	? region:  (Use arrow keys)
-	❯ us-east-1 
+	❯ us-west-2 
 	  us-east-2 
+	
+	Specify the username of the new IAM user:
+	? user name:  west2
+	Complete the user creation using the AWS console
+	https://console.aws.amazon.com/iam/home?region=undefined#/.../&policies=arn:aws:iam::aws:policy
+	Press Enter to continue
 	```
 
 
