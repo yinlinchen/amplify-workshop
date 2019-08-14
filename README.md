@@ -29,6 +29,30 @@
 	```
 	npm install --save aws-amplify aws-amplify-react uuid
 	```
+* Install the AWS Amplify CLI
+	```
+	npm install -g @aws-amplify/cli
+	```
+* Configure the CLI with our credentials
+	```
+	amplify configure
+	```
+
+	```
+	Follow these steps to set up access to your AWS account:
+
+	Sign in to your AWS administrator account:
+	https://console.aws.amazon.com/
+	Press Enter to continue
+	Specify the AWS Region
+	? region:  (Use arrow keys)
+	❯ us-east-1 
+	  us-east-2 
+	```
+
+
+
+
 
 ## GraphQL API
 * Adding a GraphQL API
