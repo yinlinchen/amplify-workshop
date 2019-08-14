@@ -7,7 +7,7 @@
 	```
 
 ## Section 1: Creating your first React Application and setup AWS Amplify
-* Create a new React project & change into the new directory using the Create React App CLI.
+* Create a new React project
 	```
 	create-react-app bookapp
 	```
@@ -15,8 +15,6 @@
 	```
 	npx create-react-app bookapp
 	```
-
-
 
 
 ## GraphQL API
