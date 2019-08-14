@@ -2,9 +2,9 @@
 
 ## Prerequisite
 * Install [Create React App](https://github.com/facebook/create-react-app#creating-an-app) CLI
-```
-npm install -g create-react-app
-```
+	```
+	npm install -g create-react-app
+	```
 
 ## Section 1: Creating your first React Application and setup AWS Amplify
 * Create a new React project & change into the new directory using the Create React App CLI.
