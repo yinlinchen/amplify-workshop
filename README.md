@@ -167,7 +167,7 @@ Please select from one of the below mentioned services GraphQL
 * Merge branch (github)
 	```
 	git checkout master
-	git merge dev
+	git merge developer
 	git add .
 	git commit -m "add a new function"
 	git push origin master
