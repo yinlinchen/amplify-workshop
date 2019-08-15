@@ -216,21 +216,22 @@
 	| Auth     | bookappb525b224 | No Change | awscloudformation |
 	```
 
-```
-amplify push
+	```
+	amplify push
 
-Do you want to generate code for your newly created GraphQL API Y
-Choose the code generation language target: javascript
-Enter the file name pattern of graphql queries, mutations and subscriptions: (src/graphql/**/*.js)
-Do you want to generate/update all possible GraphQL operations - queries, mutations and subscriptions? Y
-Enter maximum statement depth [increase from default if your schema is deeply nested] 2
-```
+	Do you want to generate code for your newly created GraphQL API Y
+	Choose the code generation language target: javascript
+	Enter the file name pattern of graphql queries, mutations and subscriptions: (src/graphql/**/*.js)
+	Do you want to generate/update all possible GraphQL operations - queries, mutations and subscriptions? Y
+	Enter maximum statement depth [increase from default if your schema is deeply nested] 2
+	```
+
 * Open AppSync Console
-```
-amplify console api
+	```
+	amplify console api
 
-Please select from one of the below mentioned services GraphQL
-```
+	Please select from one of the below mentioned services GraphQL
+	```
 
 ## Section 4: Perform data mutations for your application
 
