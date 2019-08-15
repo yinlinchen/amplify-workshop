@@ -173,31 +173,31 @@
 	    </div>
 	  )
 	}
-	
+
 	export default withAuthenticator(App, { includeGreetings: true })
 	```
 ## Section 3: Introduction to GraphQL and AWS AppSync
-
-## Section 4: Perform data mutations for your application
 * Adding a GraphQL API
 ```
 amplify add api
 
 Please select from one of the above mentioned services GraphQL
-Provide API name: CryptoGraphQL
+Provide API name: BookGraphQL
 Choose an authorization type for the API API key
 Do you have an annotated GraphQL schema? N
 Do you want a guided schema creation? Y
 What best describes your project: Single object with fields (e.g. “Todo” with ID, name, description)
 Do you want to edit the schema now? (Y/n) Y
 ```
+
 * Edit the schema
 ```
 type Book @model {
   id: ID!
-  clientId: ID
+  bookId: ID
   name: String!
   category: String!
+  description: String
   price: Float!
 }
 ```
@@ -218,6 +218,8 @@ amplify console api
 
 Please select from one of the below mentioned services GraphQL
 ```
+
+## Section 4: Perform data mutations for your application
 
 ## Section 5: Multiple development environments
 * Switch Amplify env
