@@ -137,6 +137,10 @@
 	| Auth     | bookappb525b224 | Create    | awscloudformation |
 	```
 
+* Push the changes
+	```
+	amplify push
+	```
 
 
 ## Section 3: Introduction to GraphQL and AWS AppSync
