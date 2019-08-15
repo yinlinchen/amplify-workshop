@@ -178,29 +178,30 @@
 	```
 ## Section 3: Introduction to GraphQL and AWS AppSync
 * Adding a GraphQL API
-```
-amplify add api
+	```
+	amplify add api
 
-Please select from one of the above mentioned services GraphQL
-Provide API name: BookGraphQL
-Choose an authorization type for the API API key
-Do you have an annotated GraphQL schema? N
-Do you want a guided schema creation? Y
-What best describes your project: Single object with fields (e.g. “Todo” with ID, name, description)
-Do you want to edit the schema now? (Y/n) Y
-```
+	Please select from one of the above mentioned services GraphQL
+	Provide API name: BookGraphQL
+	Choose an authorization type for the API API key
+	Do you have an annotated GraphQL schema? N
+	Do you want a guided schema creation? Y
+	What best describes your project: Single object with fields (e.g. “Todo” with ID, name, description)
+	Do you want to edit the schema now? (Y/n) Y
+	```
 
 * Edit the schema
-```
-type Book @model {
-  id: ID!
-  bookId: ID
-  name: String!
-  category: String!
-  description: String
-  price: Float!
-}
-```
+	```
+	type Book @model {
+	  id: ID!
+	  bookId: ID
+	  name: String!
+	  category: String!
+	  description: String
+	  price: Float!
+	}
+	```
+
 * Submit GraphQL schema
 	```
 	amplify status
