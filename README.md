@@ -259,7 +259,7 @@
 	      description
 	      price
 	   }
-	 }
+	  }
 	}
 	```
 
