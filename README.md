@@ -107,7 +107,22 @@
 	```
 
 ## Section 2: Setup access controls for your application
-
+* Add authentication
+	```
+	amplify add auth
+	```
+	```
+	Using service: Cognito, provided by: awscloudformation
+ 
+	The current configured provider is Amazon Cognito. 
+	 
+	Do you want to use the default authentication and security configuration? Default co
+	nfiguration
+	How do you want users to be able to sign in? Username
+	Do you want to configure advanced settings? Yes, I want to make some additional chan
+	ges.
+	What attributes are required for signing up? Email
+	```
 
 ## Section 3: Introduction to GraphQL and AWS AppSync
 
