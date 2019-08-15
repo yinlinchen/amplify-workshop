@@ -141,7 +141,17 @@
 	```
 	amplify push
 	```
-
+* Open AWS Cognito console
+	```
+	amplify console auth
+	```
+* Configure the React application
+	* src/index.js 
+	```
+	import Amplify from 'aws-amplify'
+	import config from './aws-exports'
+	Amplify.configure(config)
+	```
 
 ## Section 3: Introduction to GraphQL and AWS AppSync
 
