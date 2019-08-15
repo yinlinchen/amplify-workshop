@@ -141,10 +141,12 @@
 	```
 	amplify push
 	```
+
 * Open AWS Cognito console
 	```
 	amplify console auth
 	```
+
 * Configure the React application
 	* src/index.js 
 	```
@@ -262,6 +264,28 @@
 	  }
 	}
 	```
+
+* Perform filter query
+	```
+	query listBooksbyPrice {
+	  listBooks(filter: {
+	    price: {
+	      gt: 20
+	    }
+	  }) {
+	    items {
+	      id
+	      name
+	      category
+	      description
+	      price
+	    }
+	  }
+	}
+	```
+
+* Configure the React application
+
 
 ## Section 5: Multiple development environments
 * Switch Amplify env
