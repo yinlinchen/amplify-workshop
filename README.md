@@ -106,11 +106,12 @@
 	git push origin master
 	```
 
-## Section 2: 
+## Section 2: Setup access controls for your application
 
-## Section 3: 
 
-## Section 4: 
+## Section 3: Introduction to GraphQL and AWS AppSync
+
+## Section 4: Perform data mutations for your application
 * Adding a GraphQL API
 ```
 amplify add api
