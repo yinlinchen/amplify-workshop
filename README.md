@@ -202,8 +202,20 @@ type Book @model {
 }
 ```
 * Submit GraphQL schema
+	```
+	amplify status
+	```
+
+	```
+	Current Environment: master
+
+	| Category | Resource name   | Operation | Provider plugin   |
+	| -------- | --------------- | --------- | ----------------- |
+	| Api      | BookGraphQL     | Create    | awscloudformation |
+	| Auth     | bookappb525b224 | No Change | awscloudformation |
+	```
+
 ```
-amplify status
 amplify push
 
 Do you want to generate code for your newly created GraphQL API Y
