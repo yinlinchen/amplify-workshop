@@ -234,6 +234,34 @@
 	```
 
 ## Section 4: Perform data mutations for your application
+* Create a book record
+	```
+	mutation createBook {
+	  createBook(input: {
+	    name: "AWS Amplify book"
+	    category: "programming"
+	    description: "A book about AWS Amplify"
+      price: 90
+	  }) {
+	    id name category description price
+	  }
+	}
+	```
+
+* Perform query
+	```
+	query listBooks {
+	  listBooks {
+	    items {
+	      id
+	      name
+	      category
+	      description
+	      price
+	   }
+	 }
+	}
+	```
 
 ## Section 5: Multiple development environments
 * Switch Amplify env
