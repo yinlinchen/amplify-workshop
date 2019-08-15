@@ -124,6 +124,21 @@
 	What attributes are required for signing up? Email
 	```
 
+* Verify the changes
+	```
+	amplify status
+	```
+
+	```
+	Current Environment: master
+
+	| Category | Resource name   | Operation | Provider plugin   |
+	| -------- | --------------- | --------- | ----------------- |
+	| Auth     | bookappb525b224 | Create    | awscloudformation |
+	```
+
+
+
 ## Section 3: Introduction to GraphQL and AWS AppSync
 
 ## Section 4: Perform data mutations for your application
