@@ -170,7 +170,7 @@
 	  return (
 	    <div className="App">
 	      <p>
-	        Edit <code>src/App.js</code> and save to reload.
+	        Hello! This is an AWS Amplify application.
 	      </p>
 	    </div>
 	  )
@@ -285,6 +285,62 @@
 	```
 
 * Configure the React application
+	* src/App.js
+	```
+	import React, { useEffect, useState }  from 'react'
+	import { Auth, API, graphqlOperation } from 'aws-amplify'
+	import './App.css';
+
+	import { withAuthenticator } from 'aws-amplify-react'
+
+	// import query
+	import { listBooks } from './graphql/queries'
+
+
+	function App() {
+	  useEffect(() => {
+	    Auth.currentAuthenticatedUser()
+	      .then(user => console.log({ user }))
+	      .catch(error => console.log({ error }))
+	  })
+
+	  const [books, updateBooks] = useState([])
+
+	  useEffect(() => {
+	    getData()
+	  }, [])
+
+	  async function getData() {
+	    try {
+	      const bookData = await API.graphql(graphqlOperation(listBooks))
+	      console.log('data from API: ', bookData)
+	      updateBooks(bookData.data.listBooks.items)
+	    } catch (err) {
+	      console.log('error fetching data..', err)
+	    }
+	  }
+
+	  return (
+	    <div className="App">
+	      <p>
+	          Hello! This is an AWS Amplify application.
+	      </p>
+	      {
+	        books.map((c, i) => (
+	          <div key={i}>
+	            <h2>Title: {c.name}</h2>
+	            <h4>Category: {c.category}</h4>
+	            <h4>Description: {c.description}</h4>
+	            <p>Price: {c.price}</p>
+	          </div>
+	        ))
+	      }
+	    </div>
+	  );
+	}
+
+	export default withAuthenticator(App, { includeGreetings: true })
+	```
 
 
 ## Section 5: Multiple development environments
