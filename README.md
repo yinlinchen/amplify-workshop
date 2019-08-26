@@ -89,6 +89,23 @@
 	? Please choose the profile you want to use amplify-west2
 	```
 
+	Alternative way. Enter the access key manually
+	```
+	Specify the AWS Region
+	? region:  us-west-2
+	Specify the username of the new IAM user:
+	? user name:  west-2
+	Complete the user creation using the AWS console
+	https://console.aws.com/xxxx
+	Press Enter to continue
+
+	Enter the access key of the newly created user:
+	? accessKeyId:  
+	? secretAccessKey:  
+	This would update/create the AWS Profile in your local machine
+	? Profile Name:  west-2
+	```
+
 * Verify Amplify status
 	```
 	amplify status
@@ -468,6 +485,48 @@
 	}
 
 	export default withAuthenticator(App, { includeGreetings: true })
+	```
+
+* Add a REST API
+	```
+	? Please select from one of the below mentioned services REST
+	? Provide a friendly name for your resource to be used as a label for this category in the project: amplifyrestapi
+	? Provide a path (e.g., /items) /items
+	? Choose a Lambda source Create a new Lambda function
+	? Provide a friendly name for your resource to be used as a label for this category in the project: amplifyrestapifunction
+	? Provide the AWS Lambda function name: amplifyrestapifunction
+	? Choose the function template that you want to use: Serverless express function (Integration with Amazon API Gateway)
+	? Do you want to access other resources created in this project from your Lambda function? No
+	? Do you want to edit the local lambda function now? Yes
+	Please edit the file in your editor: /<your file path>/amplify/backend/function/amplifyrestapifunction/src/index.js
+	? Press enter to continue 
+	Succesfully added the Lambda function locally
+	? Restrict API access Yes
+	? Who should have access? Authenticated users only
+	? What kind of access do you want for Authenticated users? (Press <space> to select, <a> to toggle all, <i> to invert selection)
+	? Do you want to add another path? No
+	```
+
+* Interacting with the new API
+	```
+	let [message, setMessage] = useState('')
+
+	async function getData() { 
+	    let apiName = 'test';
+	    let path = '/items?q=test';
+	    let myInit = { // OPTIONAL
+	        headers: {} // OPTIONAL
+	    }
+	    const apiResponse = await API.get(apiName, path, myInit);
+	    setMessage(apiResponse.query)
+	    return apiResponse.query
+	}
+
+	This is the message from REST API: {message}
+  	<br/>
+  	<button onClick={() => getData()}>
+    	Show message
+  	</button>
 	```
 
 ## Section 5: Multiple development environments
