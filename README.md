@@ -7,7 +7,7 @@
 	```
 
 ## Presentation 
-* Slides[Amplify-workshop.pdf]
+* [Slides](Amplify-workshop.pdf)
 
 ## Section 1: Creating your first React Application and setup AWS Amplify
 * Create a new React project
