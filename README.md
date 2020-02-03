@@ -8,8 +8,14 @@
 
 ## Presentation 
 * [Slides](Amplify-workshop.pdf)
+* [AWS EC2 instruction](aws/readme.md)
 
 ## Section 1: Creating your first React Application and setup AWS Amplify
+* Install the AWS Amplify CLI
+	```
+	npm install -g @aws-amplify/cli
+	```
+
 * Create a new React project
 	```
 	create-react-app bookapp
@@ -32,10 +38,7 @@
 	```
 	npm install --save aws-amplify aws-amplify-react uuid
 	```
-* Install the AWS Amplify CLI
-	```
-	npm install -g @aws-amplify/cli
-	```
+
 * Configure the CLI with our credentials
 	```
 	amplify configure
