@@ -25,6 +25,11 @@
 	npx create-react-app bookapp
 	```
 
+* Change react app listening port
+	```
+	"start": "PORT=8080 react-scripts start"
+	```
+
 * Push the project to your GitHub
 	```
 	cd bookapp
