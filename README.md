@@ -569,24 +569,28 @@
 
 * Interacting with the new API
 	```
+	import React, { useEffect, useReducer, useState }  from 'react'
+
 	let [message, setMessage] = useState('')
 
-	async function getData() { 
-	    let apiName = 'test';
-	    let path = '/items?q=test';
+	async function getMessageData() {
+	    let apiName = 'amplifyrestapi';
+	    let path = '/items';
 	    let myInit = { // OPTIONAL
 	        headers: {} // OPTIONAL
 	    }
 	    const apiResponse = await API.get(apiName, path, myInit);
-	    setMessage(apiResponse.query)
-	    return apiResponse.query
+	    setMessage(apiResponse.success)
+        console.log(apiResponse)
+        return apiResponse.success
 	}
 
 	This is the message from REST API: {message}
   	<br/>
-  	<button onClick={() => getData()}>
+    <button onClick={() => getMessageData()}>
     	Show message
   	</button>
+    <br/>
 	```
 
 ## Section 5: Multiple development environments
