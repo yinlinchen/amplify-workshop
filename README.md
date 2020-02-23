@@ -147,9 +147,7 @@
 	Do you want to use the default authentication and security configuration? Default co
 	nfiguration
 	How do you want users to be able to sign in? Username
-	Do you want to configure advanced settings? Yes, I want to make some additional chan
-	ges.
-	What attributes are required for signing up? Email
+	Do you want to configure advanced settings? No, I am done.
 	```
 
 * Verify the changes
@@ -206,6 +204,52 @@
 
 	export default withAuthenticator(App, { includeGreetings: true })
 	```
+
+* Add E2E tests to app with Cypress
+	* Install Cypress
+	```
+	yarn add cypress --dev
+	```
+	* Add a test spec file
+	```
+	cd cypress/integration
+	rm -rf examples
+	touch authenticator_spec.js
+	```
+	* cypress/integration/authenticator_spec.js
+	```
+	describe('Authenticator:', function() {
+	  // Step 1: setup the application state
+	  beforeEach(function() {
+	    cy.visit('/');
+	  });
+
+	  describe('Sign In:', () => {
+	    it('allows a user to signin', () => {
+	      // Step 2: Take an action (Sign in)
+	      cy.get(selectors.usernameInput).type("code4lib");
+	      cy.get(selectors.signInPasswordInput).type("workshop");
+	      cy.get(selectors.signInSignInButton).contains('Sign In').click();
+
+	      // Step 3: Make an assertion (Check for sign-out text)
+	        cy.get(selectors.signOutButton).contains('Sign Out');
+	    });
+	  });
+
+	});
+	export const selectors = {
+	  // Auth component classes
+	  usernameInput: '[data-test="username-input"]',
+	  signInPasswordInput: '[data-test="sign-in-password-input"]',
+	  signInSignInButton: '[data-test="sign-in-sign-in-button"]',
+	  signOutButton: '[data-test="sign-out-button"]'
+	}
+	```
+	* cypress.json
+	```
+	{ "baseUrl": "http://localhost:3000/" }
+	```
+
 ## Section 3: Introduction to GraphQL and AWS AppSync
 * Adding a GraphQL API
 	```
