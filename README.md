@@ -27,10 +27,12 @@
 
 * Change react app listening port
 	```
+	"start": "react-scripts start"
+	or
 	"start": "PORT=8080 react-scripts start"
 	```
 
-* Push the project to your GitHub
+* Push the project to your GitHub (Optional)
 	```
 	cd bookapp
 	git remote add origin git@github.com:<github username>/bookapp.git
@@ -127,7 +129,7 @@
 	npm start
 	```
 
-* Deploy your application via the Amplify Console
+* Deploy your application via the Amplify Console (Optional)
 	```
 	git add .
 	git commit -m "Add a new function"
@@ -168,7 +170,7 @@
 	amplify push
 	```
 
-* Open AWS Cognito console
+* Open AWS Cognito console (Optional)
 	```
 	amplify console auth
 	```
