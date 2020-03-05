@@ -212,6 +212,7 @@
 	* Install Cypress
 	```
 	yarn add cypress@4.0.2 --dev
+	yarn run cypress open
 	```
 	* Add a test spec file
 	```
@@ -252,7 +253,10 @@
 	```
 	{ "baseUrl": "http://localhost:3000/" }
 	```
-
+	* run test
+	```
+	yarn run cypress run
+	```
 ## Section 3: Introduction to GraphQL and AWS AppSync
 * Adding a GraphQL API
 	```
