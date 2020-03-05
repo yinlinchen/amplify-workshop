@@ -44,7 +44,7 @@
 
 * Install AWS Amplify & AWS Amplify React libraries
 	```
-	npm install --save aws-amplify aws-amplify-react uuid mocha mochawesome 
+	npm install --save aws-amplify aws-amplify-react uuid mocha mochawesome@4.1.0 
 	```
 
 * Configure the CLI with our credentials
