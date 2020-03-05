@@ -60,11 +60,11 @@
 	
 	Specify the AWS Region
 	? region:  (Use arrow keys)
-	❯ us-west-2 
-	  us-east-2 
+	   us-west-2 
+	❯  us-east-2 
 	
 	Specify the username of the new IAM user:
-	? user name:  west2
+	? user name:  workshop
 	Complete the user creation using the AWS console
 	https://console.aws.amazon.com/iam/home?region=undefined#/.../&policies=arn:aws:iam::aws:policy
 	Press Enter to continue
@@ -74,7 +74,7 @@
 	? secretAccessKey:  (<YOUR_SECRET_ACCESS_KEY>)
 	
 	This would update/create the AWS Profile in your local machine
-	? Profile Name:  amplify-west2
+	? Profile Name:  workshop
 	```
 
 * Initializing Amplify project
@@ -84,8 +84,8 @@
 
 	```
 	? Enter a name for the project bookapp
-	? Enter a name for the environment master
-	? Choose your default editor: Visual Studio Code
+	? Enter a name for the environment dev
+	? Choose your default editor: Vim
 	? Choose the type of app that you're building javascript
 	Please tell us about your project
 	? What javascript framework are you using react
@@ -99,15 +99,15 @@
 	https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
 
 	? Do you want to use an AWS profile? Yes
-	? Please choose the profile you want to use amplify-west2
+	? Please choose the profile you want to use? workshop
 	```
 
 	Alternative way. Enter the access key manually
 	```
 	Specify the AWS Region
-	? region:  us-west-2
+	? region:  us-east-2
 	Specify the username of the new IAM user:
-	? user name:  west-2
+	? user name:  workshop
 	Complete the user creation using the AWS console
 	https://console.aws.com/xxxx
 	Press Enter to continue
@@ -116,7 +116,7 @@
 	? accessKeyId:  
 	? secretAccessKey:  
 	This would update/create the AWS Profile in your local machine
-	? Profile Name:  west-2
+	? Profile Name:  workshop
 	```
 
 * Verify Amplify status
@@ -158,7 +158,7 @@
 	```
 
 	```
-	Current Environment: master
+	Current Environment: dev
 
 	| Category | Resource name   | Operation | Provider plugin   |
 	| -------- | --------------- | --------- | ----------------- |
@@ -210,7 +210,7 @@
 * Add E2E tests to app with Cypress
 	* Install Cypress
 	```
-	yarn add cypress --dev
+	yarn add cypress@4.0.2 --dev
 	```
 	* Add a test spec file
 	```
