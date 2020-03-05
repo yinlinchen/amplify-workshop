@@ -29,6 +29,7 @@
 	```
 	"start": "react-scripts start"
 	or
+	vi package.json
 	"start": "PORT=8080 react-scripts start"
 	```
 
