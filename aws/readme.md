@@ -17,3 +17,4 @@ npm install -g @aws-amplify/cli
 curl -o- -L https://yarnpkg.com/install.sh | bash
 sudo yum -y install xorg-x11-server-Xvfb libXcomposite.x86_64 libXcursor.x86_64 libXi.x86_64 libXtst.x86_64 gdk-pixbuf2 gtk3.x86_64 libXScrnSaver alsa-lib-devel
 ```
+
