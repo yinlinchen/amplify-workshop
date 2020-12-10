@@ -44,7 +44,7 @@
 
 * Install AWS Amplify & AWS Amplify React libraries
 	```
-	npm install --save aws-amplify aws-amplify-react uuid mocha mochawesome@4.1.0 
+	npm install --save aws-amplify aws-amplify-react uuid
 	```
 
 * Configure the CLI with our credentials
@@ -211,7 +211,7 @@
 * Add E2E tests to app with Cypress
 	* Install Cypress
 	```
-	yarn add cypress@4.0.2 --dev
+	yarn add cypress --dev
 	yarn run cypress open
 	```
 	* Add a test spec file
@@ -437,7 +437,7 @@
 
 	import { createBook as CreateBook } from './graphql/mutations'
 
-	import uuid from 'uuid/v4'
+	import { v4 as uuid } from 'uuid';
 
 	const BOOK_ID = uuid()
 
